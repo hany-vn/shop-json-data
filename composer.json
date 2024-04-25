@@ -1,0 +1,16 @@
+{
+    "name": "hoangkha/shop",
+    "autoload": {
+        "psr-4": {}
+    },
+    "authors": [
+        {
+            "name": "Hoang Kha"
+        }
+    ],
+    "require": {
+        "izniburak/router": "^2.5",
+        "symfony/mime": "^7.0",
+        "jijihohococo/ichi-validation": "^1.4"
+    }
+}

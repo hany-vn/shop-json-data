@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Baloo+2:wght@400..800&display=swap');
+
+* {
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    min-height: 88vh;
+}
+
+li.nav-item > a.nav-link-active {
+    color: #198754 !important;
+}
+
+.logo {
+    max-width: 50%;
+    width: 50%;
+}
+
+.input-search {
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+.input-search:focus {
+    border-color: var(--bs-border-color);
+    box-shadow: none;
+}
+
+.btn-search {
+    right: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+.btn-search:focus {
+    border: none;
+}
+
+.nav-icon {
+    font-size: 20px;
+}
+
+.cart-list {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.list-inline-item .nav-user-menu {
+    z-index: 9999;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    min-height: 200px;
+    text-align: left;
+    padding: 20px 0 20px 0;
+    right: 5%;
+    top: 30%;
+
+    /*border-radius: 5px;*/
+
+    box-shadow: 0px 0px 1px 0px rgb(0, 0, 0, 0.5);
+}
+
+.list-inline-item .nav-user-menu ul {
+    list-style-type: none;
+}
+
+.list-inline-item:hover > .nav-user-menu {
+    display: block;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    /*border: 5px solid #1f84be;*/
+    border-radius: 50px;
+}
+
+.btn-auth {
+    width: 120px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+@keyframes card_img_fill {
+    from {
+        background-color: rgba(143, 216, 162, 0.8);
+    }
+    to {
+        background-color: rgba(127, 222, 153, 0.9);
+    }
+}
+
+.card-img-fill {
+    background-color: rgba(127, 222, 153, 0.9);
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.card-img {
+    width: 100%;
+    height: 35vh;
+}
+
+.card-product:hover > .card-img-fill {
+    animation-timing-function: linear;
+    animation-name: card_img_fill;
+    animation-duration: 1s;
+    display: block;
+}
+
+.card-product:hover > .card-btn {
+    display: block;
+}
+
+.card-btn:hover > .card-img-fill {
+    display: block;
+}
+
+.card-btn {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.btn-product {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 20px;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #fff;
+    background-color: rgb(255,255,255, 0);
+    color: #fff;
+}
+
+.btn-product:hover {
+    background-color: rgb(255,255,255);
+    color: #000000;
+}
+
+.btn-product > i {
+    font-size: 18px;
+}
+
+.btn-nav {
+    width: 200px;
+}
